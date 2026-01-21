@@ -1,9 +1,7 @@
 # Introduction
 
-The purpose of this exercise is to introduce the participants of the [Auburn
-University Bioinformatics
-Bootcamp](http://www.auburn.edu/cosam/bioinformatics/) to using
-[Git](https://git-scm.com/) to version control their science!
+The purpose of this exercise is to introduce you to using
+[Git](https://git-scm.com/) to version control your science!
 
 
 # Contents
@@ -30,28 +28,28 @@ and (3) be working in a group with about 3 other people.
 1.  All of you should login to your [Github](https://github.com/) account.
 
 1.  **One** of you should fork
-    [this repository](https://github.com/joaks1/au-bootcamp-git-intro), by
+    [this repository](https://github.com/joaks1/git-intro-exercise), by
     clicking the 'Fork' button on the upper right of the page.
 
-    ![Github fork button](util/images/github-fork-button.png)
+    ![Github fork button](util/images/01-github-fork-button.png)
 
-    After a few seconds, the team member that forked should be looking at their
-    copy of the repo in their Github account.
+    After confirming to create the fork, the team member that forked should be
+    looking at their copy of the repo in their Github account.
 
 1.  Next, the person that forked the repo needs to add their team members as
     collaborators:
 
     1.  Click the 'Settings' tab near the top of the page.
 
-        ![Github settings tab](util/images/github-settings-tab.png)
+        ![Github settings tab](util/images/02-github-settings-tab.png)
 
-    2.  Click 'Manage access' in the settings menu along the left.
+    2.  Click 'Collaborators' in the settings menu along the left.
 
-        ![Github collaborators tab](util/images/github-collaborator-tab.png)
+        ![Github collaborators tab](util/images/03-github-collaborator-tab.png)
 
-    3.  Click the 'Invite a collaborator' button.
+    3.  Click the 'Add people' button.
 
-        ![Github collaborators tab](util/images/github-collaborator-invite.png)
+        ![Github collaborators tab](util/images/04-github-collaborator-invite.png)
 
     4.  You should be able to find your team members' accounts by searching for
         their Github **username**.
@@ -64,13 +62,16 @@ and (3) be working in a group with about 3 other people.
     repo. Make sure you are on the page of your **team member's** forked repo,
     **NOT** my copy of the repo (see image below).
 
-    ![Double check that you are on the correct Github page](util/images/github-account-info.png)
+    ![Double check that you are on the correct Github page](util/images/05-github-account-info.png)
 
-1.  Click the 'Code' button. From the dropdown, make sure 'HTTPS' is selected
-    and copy the URL of the repo via the 'copy to clipboard' button. (**ALL**
-    team members need to do this, including the one who forked the repo)
+1.  Click the 'Code' button. If you have added your public SSH key to your
+    GitHub account, select 'SSH' and copy the URL of the repo via the copy
+    button. If you haven't setup your SSH key, follow the image below and
+    select 'HTTPS' and copy the URL of the repo via the 'copy to clipboard'
+    button. (**ALL** team members need to do this, including the one who forked
+    the repo)
 
-    ![Github copy URL](util/images/github-clipboard-button.png)
+    ![Github copy URL](util/images/06-github-clipboard-button.png)
 
 1.  In your terminal, navigate to where you want to keep this repo (you can
     always move it later, so just your home directory is fine). Then type:
@@ -118,9 +119,9 @@ something like:
     util
     
 The file `count-fasta-seqs.sh` is where you will write your shell script.  Go
-ahead and open it with your preferred text editor (probably `nano` if you are
-working on the Alabama Super Computer and have become familiar with the `nano`
-during the Bioinformatics Bootcamp).
+ahead and open it with your preferred text editor (e.g., `nano` if you are
+working on the Alabama Super Computer and have become familiar with the
+`nano`).
 You will see that the file is mostly just filled with comments (i.e., there's
 no code). 
 
@@ -172,7 +173,7 @@ tests currently fail. Try it:
     
     ----------------------------------------------------------------------
     RUNNING TEST:
-      sh count-fasta-seqs.sh /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_singleton/input/gekko-mindorensis.fasta
+      sh count-fasta-seqs.sh /home/jamie/Dropbox/projects/git-intro-exercise/tests/test_nested_singleton/input/gekko-mindorensis.fasta
     
     *****************************************
     FAIL: Did not create the expected output!
@@ -182,7 +183,7 @@ tests currently fail. Try it:
     19
     -----------------------------------------
     Here is the observed output:
-    /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_singleton/input/gekko-mindorensis.fasta
+    /home/jamie/Dropbox/projects/git-intro-exercise/tests/test_nested_singleton/input/gekko-mindorensis.fasta
     *****************************************
     
     Passed 0 out of 1 tests
@@ -191,7 +192,7 @@ tests currently fail. Try it:
     
     ----------------------------------------------------------------------
     RUNNING TEST:
-      sh count-fasta-seqs.sh /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/*
+      sh count-fasta-seqs.sh /home/jamie/Dropbox/projects/git-intro-exercise/tests/test_nested_files/input/*
     
     *****************************************
     FAIL: Did not create the expected output!
@@ -203,7 +204,7 @@ tests currently fail. Try it:
     71
     -----------------------------------------
     Here is the observed output:
-    /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/cyrtodactylus-philippinicus.fasta /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/gekko-mindorensis.fasta /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/insulasaurus-arborens.fasta
+    /home/jamie/Dropbox/projects/git-intro-exercise/tests/test_nested_files/input/cyrtodactylus-philippinicus.fasta /home/jamie/Dropbox/projects/git-intro-exercise/tests/test_nested_files/input/gekko-mindorensis.fasta /home/jamie/Dropbox/projects/git-intro-exercise/tests/test_nested_files/input/insulasaurus-arborens.fasta
     *****************************************
     
     Passed 0 out of 1 tests

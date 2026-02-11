@@ -63,7 +63,7 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-echo "$@"
+# echo "$@"
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -94,3 +94,25 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
+
+# Create variable for summing up the total number of sequences
+total=0
+
+# Loop over each fasta file provided on the command line
+for file_path in "$@"
+do
+    # Get only the name of the file
+    file_name="$(basename "$file_path")"
+
+    # Count the number of sequences in this file
+    seq_count="$(grep ">" "$file_path" | wc -l)"
+
+    # Add the number of sequences in this file to the total count
+    total="$(expr $total + $seq_count)"
+
+    # Write the number of sequences found in the file and the file name
+    echo $seq_count $file_name
+done
+
+# Write the total number of sequenes found in all the files
+echo $total
